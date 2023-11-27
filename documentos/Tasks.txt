@@ -1,0 +1,120 @@
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+** Semana 1
+- Investigación de microcontroladores para ejecutar modelos de IA (Raspberry Pi Zero W y Raspberry Pi Pico W).
+- Investigación de microcontroladores como dispositivos IoT (ESP32 y ESP8266).
+- Investigación de protocolos MQTT y HTTP para la creación de redes con dispositivos IoT.
+
+** Semana 2
+- Preparación del ambiente para los microcontroladores ESP32, ESP8266 y Raspberry Pi Pico W.
+	- Instalación de IDEs y controladores.
+	- Incorporación de bibliotecas.
+	- Desarrollo de un código básico.
+	- Carga y validación del código en las placas.
+- Preparación del ambiente para la creación de la red MQTT.
+	- Instalación del Broker MQTT, biblioteca Paho y plataforma Node-Red.
+- Diseño e implementación de una red MQTT básica.
+	- Definición de temas (topics) de comunicación y la estructura de los datos.
+	- Integración de MQTT en los dispositivos virtuales mediante Paho.
+	- Verificación de la red mediante el envío y recepción de datos.
+- Contribución al desarrollo del informe (Capítulo 1).
+- Creación del repositorio y documentación técnica del proyecto.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+** Semana 3
+- Desarrollo de la sección de IoT (Capítulo 2) del informe.
+- Investigación de datasets sobre ataques cibernéticos en redes MQTT.
+- Investigación de técnicas de Aprendizaje No Supervisado.
+
+** Semana 4
+- Desarrollo de un sistema de detección de anomalías utilizando aprendizaje no supervisado.
+	- Selección del dataset.
+	- Preprocesamiento de datos.
+	- Diseño del Autoencoder.
+	- Definición del umbral (threshold).
+	- Creación del algoritmo de Clustering.
+	- Evaluación y ajuste del modelo.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+** Semana 5
+- Desarrollo de la sección de MQTT (Capítulo 2) del informe.
+- Investigación de soluciones para la implementación de modelos de ML en dispositivos con recursos limitados (TinyML).
+- Investigación de herramientas para el análisis de tráfico de redes y la captura de paquetes de datos (Wireshark y TShark).
+- Adaptar el modelo de Machine Learning creado en TensorFlow para su uso en TinyML.
+	- Almacenar el modelo de TensorFlow.
+	- Realizar la conversión al formato TensorFlow Lite.
+		- Optimizar el modelo de ML mediante técnicas como la cuantización.
+
+** Semana 6
+- Continuación con la implementación de la red MQTT
+	- Desarrollo del código que permita a los microcontroladores (ESP32 y ESP8266) establecer una conexión con el broker MQTT y transmitir datos simulados.
+	- Integración de los dispositivos IoT (ESP32 y ESP8266) en la red existente.
+- Captura de datos de la red mediante Wireshark o TShark
+	- Desarrollo de un script que permita capturar los paquetes de datos y almacenarlos.
+	- Implementación de técnicas de aumentación (Augmented) en los datos adquiridos.
+	- Creación de un código para la generación de datos ficticios, simulando los patrones de datos de un ataque.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+** Semana 7
+- Contribución al desarrollo de la sección de Microcontroladores/Sistemas Embebidos (Capítulo 2) del informe.
+- Investigación de ataques informáticos dirigidos a redes MQTT y análisis de códigos relacionados con estos ataques.
+- Investigación de plataformas para desplegar modelos de IA en dispositivos embebidos (Edge Impulse).
+- Generación de la inferencia mediante la plataforma Edge Impulse.
+	- Carga del modelo (model.tflite).
+	- Construcción de la biblioteca C++ (inferencia).
+- Despliegue del modelo al dispositivo embebido.
+	- Clonación del repositorio base proporcionado por Edge Impulse.
+	- Incorporación de datos de muestra en el archivo main.cpp.
+	- Compilación del proyecto y generación del archivo UF2.
+	- Verificación de la clasificación mediante la comunicación serial con la computadora (Minicom).
+
+** Semana 8
+- Contribución al desarrollo del informe (Capítulo 3).
+- Desarrollo del código para llevar a cabo ataques informáticos en redes MQTT.
+	- Adaptación de los ataques BCFG y SlowITe (ataques de denegación de servicio) encontrados en la web.
+	- Adaptación de los ataques Bruteforce y Malformed (ataques de denegación de servicio) encontrados en la web.
+- Creación del dataset para IoTShield
+	- Recopilación de datos reales de la red MQTT (generados por dispositivos IoT) mediante TShark.
+	- Recopilación de datos generados durante el ataque a la red MQTT utilizando TShark.
+- Validación del modelo con respecto al dataset de IoTShield y ajuste de los parámetros del modelo.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+** Semana 9
+- Contribución al desarrollo del informe (Capítulo 4).
+- Investigación sobre como generar un conjuntos de datos para sistemas de detección de intrusiones en redes IoT.
+
+** Semana 10
+- Desarrollo del código para enviar datos desde la PC y recibirlos en el sistema embebido (Servidor Web, CoAP o MQTT).
+- Integración y evaluación del sistema utilizando el conjunto de datos MQTTset.
+	- Implementación del sistema distribuido.
+		- Segmentación de los paquetes de datos y distribución a múltiples Sistemas Embebidos.
+	- Monitoreo en tiempo real y detección de posibles ataques.
+	- Activación de alertas en caso de detectarse un ataque.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+** Semana 11
+- Contribución al desarrollo del informe (Capítulo 5).
+- Integración y evaluación del sistema utilizando el conjunto de datos IoTShield.
+	- Generación de datos a través de los dispositivos IoT conectados a la red MQTT.
+	- Recopilación y segmentacion de los paquetes generados por los dispositivos IoT.
+	- Distribución de los paquetes a múltiples Sistemas Embebidos.
+	- Monitoreo en tiempo real y detección de posibles ataques.
+	- Ejecución de ataques cibernéticos dirigidos al broker MQTT.
+	- Activación de alertas en caso de detectarse un ataque.
+- Activación de un mecanismo de prevención para proteger la red MQTT contra ataques cibernéticos.
+	- Bloqueo del puerto TCP 1883.
+	
+** Semana 12
+- Elaboración de las secciones finales del informe.
+- Preparación de documentación técnica.
+- Trabajos Futuros (Fuera del alcance del Proyecto)
+	- Implementación de medidas preventivas y/o correctivas en respuesta a la detección de ataques cibernéticos.
+	- Aplicación de técnicas de re-entrenamiento periódico al modelo de IA.
+	- Experimentación con distintas técnicas de optimización en modelos de IA para comparar el rendimiento del sistema embebido en términos de CPU y memoria.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------

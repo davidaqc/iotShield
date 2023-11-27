@@ -1,0 +1,33 @@
+Instalacion:
+
+Python:
+	- viene por defecto instalado
+	- python3 --version
+	
+C++:
+	- sudo apt-get update
+	- sudo apt-get upgrade
+	- sudo apt-get install g++
+	
+Cmake:
+	- sudo apt-get install cmake
+	- cmake --version
+	
+Git:
+	- sudo apt-get install git
+	- git --version
+	
+Minicom:
+	- sudo apt-get install minicom
+	- Configuracion 
+		-> minicom -s
+			-> Configuracion del puerto serial 
+				-> Dispositivo Serie: /dev/ttyACM0
+
+Raspberry Pi Pico SDK:
+	- Clonar el repositorio (https://github.com/raspberrypi/pico-sdk.git)
+	- Install CMake and GCC cross compiler
+		- sudo apt install cmake gcc-arm-none-eabi libnewlib-arm-none-eabi libstdc++-arm-none-eabi-newlib
+	- Configurar los paths -> nano ~/.bashrc
+		export PICO_SDK_PATH=/home/davidaqc/pico/pico-sdk
+

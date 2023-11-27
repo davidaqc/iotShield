@@ -1,0 +1,4 @@
+Para agregar más dispositivos, se debe modificar el archivo source/include/config.hpp con el "#" correspondiente:
+	- const char MQTT_CLIENT_ID[] = "device_#_client_id";
+	- const char IA_TOPIC_CLASIFICATION[] = "ia/rpi_#/clasificacion";
+	- const char IA_TOPIC_DATOS[] = "ia/rpi_#/datos";

