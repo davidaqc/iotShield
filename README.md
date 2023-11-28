@@ -13,6 +13,9 @@ La estructura integral del sistema se organiza de la siguiente manera:
 
 - Desarrollo de un sistema distribuido responsable de recoger los datos de la red MQTT y distribuirlos a los microcontroladores Raspberry Pi Pico W, con la finalidad de que estos clasifiquen los datos como anómalos o normales.
 
+![Arquitectura de Software del Sistema](https://github.com/davidaqc/iot_shield/blob/main/documentos/arquitectura_software_sistema.svg)
+
+
 ## Herramientas utilizadas
 
 -	Python
@@ -23,8 +26,8 @@ La estructura integral del sistema se organiza de la siguiente manera:
 
 ## Instalación
 
-Para obtener detalles sobre la instalación, consulta la documentación [aquí](https://www.google.com/?hl=es).
+Para obtener detalles sobre la instalación, consulta la documentación [aquí](https://github.com/davidaqc/iot_shield/tree/main/documentos).
 
 ## Instrucciones de uso
 
-Para obtener instrucciones detalladas sobre el uso del sistema, consulta la documentación [aquí](https://www.google.com/?hl=es).
+Para obtener instrucciones detalladas sobre el uso del sistema, consulta la documentación [aquí](https://github.com/davidaqc/iot_shield/tree/main/documentos).
